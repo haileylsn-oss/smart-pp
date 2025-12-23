@@ -13,7 +13,7 @@ const Promotions = () => {
     {/* Checking Accounts */}
     <div className="border rounded-lg p-4 shadow-sm">
       <h4 className="text-xs font-semibold text-gray-600 uppercase">
-        Citi® Checking Accounts – USA & Mexico
+        USAA® Checking AccountS
       </h4>
       <img
         src={img1}
@@ -23,10 +23,10 @@ const Promotions = () => {
       <h3 className="mt-4 text-lg font-bold text-gray-900">
         Simplified Banking
       </h3>
-      <p className="mt-2 text-gray-600 text-sm">
-        Citi mobile banking in the US and Mexico allows you to manage your money,
-        transfer funds in USD or MXN, and pay friends instantly – anytime, anywhere across both countries.
-      </p>
+     <p className="mt-2 text-gray-600 text-sm">
+  USAA mobile banking in the US allows you to manage your money, deposit checks,
+  transfer funds, and pay bills – anytime, anywhere within the United States.
+</p>
       <button className="mt-4 px-5 py-2 bg-blue-800 text-white rounded-md font-medium hover:bg-blue-700">
         Learn More
       </button>
@@ -35,7 +35,7 @@ const Promotions = () => {
     {/* Savings Accounts */}
     <div className="border rounded-lg p-4 shadow-sm">
       <h4 className="text-xs font-semibold text-gray-600 uppercase">
-        Citi® Savings Accounts – USA & Mexico
+      USAA® Checking AccountS
       </h4>
       <img
         src={img2}
@@ -57,7 +57,7 @@ const Promotions = () => {
     {/* Credit Cards */}
     <div className="border rounded-lg p-4 shadow-sm">
       <h4 className="text-xs font-semibold text-gray-600 uppercase">
-        Citi® Credit Cards – USA & Mexico
+  USAA® Checking AccountS
       </h4>
       <img
         src={img3}
@@ -65,12 +65,12 @@ const Promotions = () => {
         className="rounded-md mt-3"
       />
       <h3 className="mt-4 text-lg font-bold text-gray-900">
-        Explore Citi® Credit Cards
+        Explore USAA® Credit Cards
       </h3>
       <p className="mt-2 text-gray-600 text-sm">
-        Whether you're looking for cashback in USD or MXN, travel rewards, or
-        premium lifestyle benefits, Citi has the right card for your needs
-        across the US and Mexico.
+        Whether you're looking for cashback in USD, travel rewards, or
+        premium lifestyle benefits, USAA has the right card for your needs
+        across the US
       </p>
       <button className="mt-4 px-5 py-2 bg-blue-800 text-white rounded-md font-medium hover:bg-blue-700">
         Learn More

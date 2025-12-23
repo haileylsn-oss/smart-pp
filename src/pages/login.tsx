@@ -145,7 +145,7 @@ const LoginForm: React.FC = () => {
       ) : (
         <div className="flex z-10 w-full  justify-center items-center min-h-screen p-4">
           <div className="  rounded p-8 w-full max-w-md">
-            <img src={logo} alt=""  width={200} className="m-auto mb-3"/>
+            <img src={logo} alt=""  width={100} className="m-auto mb-3"/>
             
             
 

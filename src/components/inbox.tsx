@@ -1,5 +1,5 @@
-import  { useState } from "react";
-import { MailWarning, ShieldAlert, CreditCard, Info, CheckCircle } from "lucide-react";
+import { useState } from "react";
+import { MailWarning, ShieldAlert, CreditCard, Info, CheckCircle, Lock } from "lucide-react";
 import BottomNav from "../pages/stickyNav";
 import BottomNav2 from "../pages/bottomnav2";
 import SupportBot from "./support";
@@ -17,28 +17,29 @@ type Message = {
 const messages: Message[] = [
   {
     id: 5,
-    icon: <CheckCircle className="text-green-600" size={24} />,
-    subject: "Notification As per Mexican Real Estate Law,",
-    preview:
-      "Notification As per Mexican Real Estate Law,",
-    full: `Notification:
-In accordance with Mexican Real Estate Law, a 5% estate transfer fee has been applied.
-An amount of $415,000 MXN has been frozen for tax and estate transfer assessment, with an outstanding balance of $85,000 MXN required for completion.
-`,
+    icon: <Lock className="text-red-600" size={24} />,
+    subject: "Account Security Alert: Suspicious Activity Detected",
+    preview: "Unusual login attempt detected from unrecognized device.",
+    full: `Security Alert:
+We've detected an unauthorized login attempt to your USAA account from an unrecognized device in Dallas, TX. 
+Your account has been temporarily secured for your protection. Please verify this activity was not initiated by you.`,
     date: "October 20, 2025",
     unread: true,
   },
   {
     id: 1,
     icon: <ShieldAlert className="text-red-700" size={24} />,
-    subject: "Transfer Restricted: Legal Fee Clearance Required",
-    preview:
-      "Your account requires settlement of the pending legal fee before transfers can be enabled.",
-    full: `🚫 Transfer Access Temporarily Restricted – Legal Compliance Required.
+    subject: "Account On Hold: Verification Required",
+    preview: "Your account has been restricted pending identity verification.",
+    full: `Account Access Restricted – Immediate Action Required
 
-Estimado cliente, your Citi Bank USA & México account is currently on hold pending legal clearance.  
-A legal fee of **MXN 4,713,800** (approx. **USD 259,000**) is required to activate transfer functionality.  
-This charge is part of the standard legal and compliance process under Mexican banking regulations for fund authorization.`,
+Dear USAA Member,
+
+Your account has been placed on temporary hold due to security verification requirements. 
+To restore full access, please complete the identity verification process through the USAA mobile app or website.
+
+This is a standard security measure to protect your account from unauthorized access. 
+Once verified, all account functionality will be restored immediately.`,
     date: "July 5, 2025",
     unread: true,
   },
@@ -46,11 +47,18 @@ This charge is part of the standard legal and compliance process under Mexican b
     id: 2,
     icon: <MailWarning className="text-yellow-600" size={24} />,
     subject: "Important: Account Verification Pending",
-    preview:
-      "We noticed your account verification is not yet complete. Please update your details soon.",
-    full: `Hola, we noticed your Citi Bank USA & México profile verification is still incomplete.  
-Kindly log in and upload the required documents to keep your services active and secure.  
-Gracias for your quick attention to this matter.`,
+    preview: "Your account verification is not yet complete. Please update your details.",
+    full: `Important Account Update
+
+We noticed your USAA account verification is still pending completion.  
+Please log in to your account and complete the verification process to maintain full access to all banking services.
+
+Required documents may include:
+• Government-issued ID
+• Proof of address
+• Military service verification (if applicable)
+
+Thank you for helping us keep your account secure.`,
     date: "July 3, 2025",
     unread: true,
   },
@@ -58,50 +66,66 @@ Gracias for your quick attention to this matter.`,
     id: 3,
     icon: <CreditCard className="text-green-700" size={24} />,
     subject: "Card Issuance Notice",
-    preview:
-      "Your virtual debit card has been approved and will be issued shortly.",
-    full: `¡Buenas noticias! Your Citi Bank USA & México virtual debit card has been approved.  
-It will be issued to your account within 2–3 business days.  
-We appreciate your confianza (trust) in our banking service.`,
+    preview: "Your USAA Visa® debit card has been approved and shipped.",
+    full: `Good News – Your New Card is on the Way!
+
+Your USAA Visa® debit card has been approved and shipped to your address on file.  
+You should receive it within 5-7 business days.
+
+Once received, you can activate your card:
+1. Through the USAA mobile app
+2. Online at usaa.com
+3. By calling the number on the card
+
+Thank you for choosing USAA for your banking needs.`,
     date: "July 1, 2025",
-    unread: true,
+    unread: false,
   },
   {
     id: 4,
     icon: <Info className="text-blue-600" size={24} />,
-    subject: "New Feature: Cross-Border Spending Analytics",
-    preview:
-      "Track your spending between the U.S. and México with our new analytics tool.",
-    full: `Discover a new way to understand your spending with our Cross-Border Analytics feature.  
-Your Citi Bank USA & México dashboard now lets you explore detailed insights into your transactions across both countries.  
-Simple, clear, and muy útil for your finances.`,
+    subject: "New Feature: Military Pay Advance Now Available",
+    preview: "Access up to $1,000 of your military pay early with no fees.",
+    full: `Introducing Military Pay Advance
+
+USAA is proud to offer Military Pay Advance, a new benefit for eligible members. 
+Access up to $1,000 of your military pay early with no interest or fees.
+
+Features:
+• No credit check required
+• No interest or fees
+• Automatic repayment on your next payday
+• Available up to twice per pay period
+
+Log in to your USAA account to check your eligibility and get started.`,
     date: "June 29, 2025",
     unread: false,
   },
   {
-    id: 5,
+    id: 6,
     icon: <CheckCircle className="text-green-600" size={24} />,
     subject: "Your Profile Has Been Verified",
-    preview:
-      "Thank you for completing verification. Your account now has full access.",
-    full: `We’re pleased to inform you that your Citi Bank USA & México profile verification has been successfully completed.  
-You now have full access to all features — felicidades! and thank you for choosing us.`,
+    preview: "Thank you for completing verification. Your account now has full access.",
+    full: `Verification Complete – Full Access Restored
+
+We're pleased to inform you that your USAA profile verification has been successfully completed.  
+Your account now has full access to all banking features and services.
+
+Thank you for your patience and cooperation during this security review. We appreciate your commitment to keeping your account secure.
+
+Welcome back to full banking access with USAA!`,
     date: "June 25, 2025",
     unread: false,
   }
-  
 ];
-
-
 
 const InboxPage = () => {
   const [selectedMessage, setSelectedMessage] = useState<Message | null>(null);
 
-
   return (
     <>
       <div className="max-w-3xl mx-auto p-6 mb-8">
-        <h1 className="text-2xl font-bold mb-6 text-red-800 text-center"> Inbox </h1>
+        <h1 className="text-2xl font-bold mb-6 text-red-800 text-center">USAA Message Center</h1>
 
         <ul className="space-y-4">
           {messages.map((msg) => (

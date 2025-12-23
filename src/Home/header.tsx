@@ -13,7 +13,7 @@ const Header: React.FC = () => {
         {/* Left: Logo + FDIC */}
         <div className="flex items-center space-x-4">
           <Link to="/">
-            <img src={logo2} alt="Logo" width="150" />
+            <img src={logo2} alt="Logo" width="80" />
           </Link>
           {/* <div className="hidden md:block text-xs text-gray-700 leading-tight max-w-[250px]">
             <span className="font-bold">FDIC</span> Insured – Backed by the full

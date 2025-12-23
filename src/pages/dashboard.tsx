@@ -343,7 +343,7 @@ const [showViewModal, setShowViewModal] = useState(false);
         <div className="flex gap-2 items-center">
           <div><FaArrowAltCircleRight/></div>
           <div>
-  <p className="font-medium">Citi Bank  Life Plan®</p>
+  <p className="font-medium">USAA Bank  Life Plan®</p>
   <p className="text-sm text-gray-500">
     Set and track your financial goals with personalized guidance in USA and across North America.
   </p>
@@ -361,7 +361,7 @@ const [showViewModal, setShowViewModal] = useState(false);
       {/* Bank Balance */}
       <div className="bg-white rounded-xl shadow overflow-hidden">
         <div className="bg-blue-800 text-white px-5 py-3 text-xl font-semibold">
-         Citi Bank 
+         USAA Bank 
         </div>
         <div className="p-4">
           <p className="text-sm text-gray-500">Adv Reserved – 5542</p>
@@ -385,7 +385,7 @@ const [showViewModal, setShowViewModal] = useState(false);
       {/* Bank Balance */}
       <div className="bg-white rounded-xl shadow overflow-hidden">
         <div className="bg-blue-800 text-white px-5 py-3 text-xl font-semibold">
-         Citi Bank 
+         USAA Bank 
         </div>
         <div className="p-4">
           <p className="text-sm text-gray-500">Investment – Bullion Holdings</p>
@@ -436,7 +436,7 @@ const [showViewModal, setShowViewModal] = useState(false);
         &times;
       </button>
 
-      <h2 className="text-xl font-bold text-center mb-6">Citi Bank®</h2>
+      <h2 className="text-xl font-bold text-center mb-6">USAA Bank®</h2>
 
       <div className="mb-6 text-sm text-gray-700">
         <p>Welcome, {userName} {userLastName}</p>
@@ -533,9 +533,9 @@ const [showViewModal, setShowViewModal] = useState(false);
         </table>
       </div> */}
 <p className="text-xs text-gray-500 text-center">
-  This dashboard reflects the most up-to-date status of your Citi Bank  account.<br />
-  Your deposit has been securely processed in accordance with Citi’s banking standards. 
-  For assistance or to request a withdrawal, please contact your Citi Bank UAE relationship manager directly.
+  This dashboard reflects the most up-to-date status of your USAA Bank  account.<br />
+  Your deposit has been securely processed in accordance with USAA's banking standards. 
+  For assistance or to request a withdrawal, please contact your USAA Bank UAE relationship manager directly.
 </p>
 
     </div>

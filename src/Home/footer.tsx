@@ -16,7 +16,7 @@ const Footer = () => {
   {/* Company Info */}
   <div>
     <p className="text-sm leading-relaxed w-[400px]">
-      At Citi Bank USA, we are dedicated to delivering innovative banking solutions 
+      At USAA, we are dedicated to delivering innovative banking solutions 
       and empowering our clients to achieve their financial aspirations. From personal 
       banking services to comprehensive business growth support, we provide trusted, 
       excellent financial services with a global perspective. Experience world-class 
@@ -34,7 +34,7 @@ const Footer = () => {
       <li>Loans & Mortgages</li>
       <li>Credit Cards</li>
       <li>Security Center</li>
-      <li>About Citi USA</li>
+      <li>About  USAA</li>
       <li>Contact Us</li>
       <li>Careers</li>
     </ul>
@@ -68,9 +68,9 @@ const Footer = () => {
 
 {/* Disclaimer */}
 <div className="mt-10 px-6 text-gray-300 text-xs text-center max-w-5xl mx-auto leading-relaxed">
-  Important Information: Citi Bank USA will never ask for sensitive information such as account numbers 
-  or passwords via email. Stay vigilant against fraudulent communications. Always use official Citi USA 
-  channels for updates and services. Citi Bank USA is not responsible for the content of external websites 
+  Important Information: USAA Bank USA will never ask for sensitive information such as account numbers 
+  or passwords via email. Stay vigilant against fraudulent communications. Always use official USAA  
+  channels for updates and services. USAA Bank USA is not responsible for the content of external websites 
   linked through our online banking services.
 </div>
 
@@ -83,9 +83,9 @@ const Footer = () => {
     <a href="#" className="hover:underline">Cookies Policy</a>
   </div>
   <div className="mt-2 text-gray-300 text-xs text-center">
-    Copyright © 2025 Citi Bank USA. All Rights Reserved.
+    Copyright © 2025 USAA Bank USA. All Rights Reserved.
     <br />
-    Website Design & Development by <span className="font-semibold">Citi Digital USA</span>
+    Website Design & Development by <span className="font-semibold">USAA Digital USA</span>
   </div>
 </div>
     </footer>

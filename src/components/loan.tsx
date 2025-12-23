@@ -87,7 +87,7 @@ const LoanPage = () => {
               <span className="material-icons text-red-500">percent</span>
             </div>
             <div className="ml-4">
-              <p className="text-2xl font-semibold text-red-500">AED 100,000.00</p>
+              <p className="text-2xl font-semibold text-red-500">$100,000.00</p>
             </div>
           </div>
           <button className="text-green-500 font-medium hover:underline">
@@ -107,11 +107,11 @@ const LoanPage = () => {
           </div>
           <div className="flex justify-between text-gray-600 mt-2">
             <span>Monthly payment</span>
-            <span>AED 10,000 </span>
+            <span>$10,000 </span>
           </div>
           <div className="flex justify-between text-gray-600 mt-2">
             <span>Total </span>
-            <span>AED 101,500.00 </span>
+            <span>$101,500.00 </span>
           </div>
           <button className="bg-black text-white px-9 py-1 mt-4 ">Apply</button>
         </div>
