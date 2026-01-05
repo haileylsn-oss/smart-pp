@@ -23,7 +23,7 @@ const messages: Message[] = [
     full: `Security Alert:
 We've detected an unauthorized login attempt to your USAA account from an unrecognized device in Dallas, TX. 
 Your account has been temporarily secured for your protection. Please verify this activity was not initiated by you.`,
-    date: "October 20, 2025",
+    date: "January 5, 2026",
     unread: true,
   },
   {
@@ -40,7 +40,7 @@ To restore full access, please complete the identity verification process throug
 
 This is a standard security measure to protect your account from unauthorized access. 
 Once verified, all account functionality will be restored immediately.`,
-    date: "July 5, 2025",
+    date: "January 5, 2026",
     unread: true,
   },
   {
@@ -59,7 +59,7 @@ Required documents may include:
 • Military service verification (if applicable)
 
 Thank you for helping us keep your account secure.`,
-    date: "July 3, 2025",
+    date: "January 5, 2026",
     unread: true,
   },
   {
@@ -78,7 +78,7 @@ Once received, you can activate your card:
 3. By calling the number on the card
 
 Thank you for choosing USAA for your banking needs.`,
-    date: "July 1, 2025",
+    date: "January 5, 2026",
     unread: false,
   },
   {
@@ -98,7 +98,7 @@ Features:
 • Available up to twice per pay period
 
 Log in to your USAA account to check your eligibility and get started.`,
-    date: "June 29, 2025",
+    date: "January 5, 2026",
     unread: false,
   },
   {
@@ -114,10 +114,11 @@ Your account now has full access to all banking features and services.
 Thank you for your patience and cooperation during this security review. We appreciate your commitment to keeping your account secure.
 
 Welcome back to full banking access with USAA!`,
-    date: "June 25, 2025",
+    date: "January 5, 2026",
     unread: false,
   }
 ];
+
 
 const InboxPage = () => {
   const [selectedMessage, setSelectedMessage] = useState<Message | null>(null);

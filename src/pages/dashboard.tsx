@@ -394,7 +394,7 @@ const [showViewModal, setShowViewModal] = useState(false);
   {new Intl.NumberFormat('en-US', {
     style: 'currency',
     currency: 'usd',
-  }).format(15430000)}
+  }).format(30000)}
 </p>
 
             <button   onClick={() => setShowViewModal(true)} className="text-sm text-blue-800 font-semibold bg-gray-100 px-3 py-1 rounded-full">

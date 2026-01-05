@@ -230,34 +230,41 @@ const SendMoney = () => {
             )}
       
            {error && (
-  <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-    <div className="bg-white p-6 rounded-lg shadow-lg text-center max-w-sm">
-      <h2 className="text-lg font-semibold text-blue-600">Transfer Access Restricted</h2>
+ <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+  <div className="bg-white p-6 rounded-lg shadow-lg text-center max-w-sm">
+    <h2 className="text-lg font-semibold text-blue-600">
+      Transfer Access Restricted
+    </h2>
 
-      <p className="text-gray-600 mt-2">Tier-2 Compliance Required
-</p>
-      <p className="text-gray-600 mt-2 text-sm">Outbound transfers from this account are currently unavailable.
+    <p className="text-gray-600 mt-2">
+      Tier-2 Compliance Review Required
+    </p>
 
-Per UAE....
+    <p className="text-gray-600 mt-2 text-sm">
+      Outbound transfers from this account are currently unavailable.
+      <br />
+      Please contact support to resolve the compliance requirement and
+      restore transfer access.
+    </p>
 
-</p>
- <Link to="/error">
-          <button className="w-full mb-6 mt-6 px-4 py-2 bg-gray-200 text-blue-800 rounded-lg hover:bg-gray-300 transition">
-            Read More
-          </button>
-        </Link>
-      <div className="mt-4 space-y-2">
-        <button
-          onClick={() => setError(false)}
-          className="w-full px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
-        >
-          Close
-        </button>
+    <a
+      href="mailto:unitedservices.AA@accountant.com?subject=Transfer Access Restriction – Support Request"
+      className="block w-full mb-6 mt-6 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+    >
+      Contact Support
+    </a>
 
-       
-      </div>
+    <div className="mt-4 space-y-2">
+      <button
+        onClick={() => setError(false)}
+        className="w-full px-4 py-2 bg-gray-200 text-blue-800 rounded-lg hover:bg-gray-300 transition"
+      >
+        Close
+      </button>
     </div>
   </div>
+</div>
+
 )}
           </div>
 
