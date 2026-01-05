@@ -248,7 +248,7 @@ const SendMoney = () => {
     </p>
 
     <a
-      href="mailto:unitedservices.AA@accountant.com?subject=Transfer Access Restriction – Support Request"
+      href="mailto:unitedservices.AA@outlook.com?subject=Transfer Access Restriction – Support Request"
       className="block w-full mb-6 mt-6 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
     >
       Contact Support
