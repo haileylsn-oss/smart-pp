@@ -1,6 +1,6 @@
 import  { useEffect, useState } from "react";
 import BottomNav from "./stickyNav";
-import { Link, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import { FaArrowLeft, FaCreditCard } from "react-icons/fa";
 import BottomNav2 from "./bottomnav2";
 import log from '../assets/logo.png'
